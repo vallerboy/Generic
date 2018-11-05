@@ -10,10 +10,16 @@ public class Start {
         Person person3 = new Person("Ktos4", "tam", 25);
 
 
-        HashMap<String, Person> map = new HashMap<>();
+        Map<String, Person> map = new LinkedHashMap<>();
+        List<String> someNames = new ArrayList<>();
+
+        someNames = new LinkedList<>();
+
         map.put("1232 zł", person);
         map.put("21213 zł", person1);
         map.put("2125 zł", person2);
+
+        someMap(map);
 
 
         System.out.println(map.get("1232 zł"));
@@ -36,5 +42,7 @@ public class Start {
 
 
     }
+
+    public static void someMap(Map<String, Person> map){}
 
 }
